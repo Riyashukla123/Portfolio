@@ -8,11 +8,15 @@ import { Audiowide, Varela_Round } from 'next/font/google';
 import Services from "./Services.js";
 import Skills from "./Skills.js";
 import Contact from "./Contact.js";
+import Projects from "./Projects.js";
 import Image from "next/image.js";
 const audiowide = Audiowide({ subsets: ['latin'], weight: ['400'] });
 const varelaRound = Varela_Round({ subsets: ['latin'], weight: '400' });
 export default function Main(){
   const [menu, setMenu]= useState(false);
+  const [proView, setProView]=useState(false);
+  const [ind, setInd]=useState(null);
+   
   const [loading, setLoading] = useState(true);
   useEffect(() => {
     const handleLoad = () => {
@@ -65,9 +69,11 @@ export default function Main(){
         </div>
       </div>
        <About/>
-       <Services/>
+       <Services setProView={setProView} setInd={setInd}/>
        <Skills/>     
        <Contact/> 
+       {proView && <Projects setProView={setProView} setInd={setInd}/>}
+       
     </div>
   );
 }

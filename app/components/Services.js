@@ -10,7 +10,7 @@ const audiowide = Audiowide({ subsets: ['latin'], weight: ['400'] });
 const varelaRound = Varela_Round({ subsets: ['latin'], weight: '400' });
 
 
-export default function Services(){
+export default function Services({setProView, setInd}){
 
   const [activeCard, setActiveCard] = useState(0);
   useEffect(()=>{
@@ -33,13 +33,25 @@ export default function Services(){
           </div>
         </div>
         <div className="h-full w-full flex flex-col md:flex-row">
-          <div className={` ${activeCard == 0 ? 'h-[110%] md:h-full md:w-[110%]' : 'h-full w-full'} transition-all duration-900 flex border-b md:border-b-0 md:border-r border-purple-600`}>
+          <div className={` ${activeCard == 0 ? 'h-[110%] md:h-full md:w-[110%]' : 'h-full w-full'} transition-all duration-900 flex border-b md:border-b-0 md:border-r border-purple-600`} onClick={(e)=>{
+            e.preventDefault;
+            setProView(true);
+            setInd(0);
+          }}>
             <Card {...Data[0]} activeCard = {activeCard} setActiveCard = {setActiveCard}/>
           </div>
-          <div className={` ${activeCard == 1 ? 'h-[110%] md:h-full md:w-[110%]' : 'h-full w-full'} transition-all duration-900 flex border-b md:border-b-0 md:border-r border-purple-600`}>
+          <div className={` ${activeCard == 1 ? 'h-[110%] md:h-full md:w-[110%]' : 'h-full w-full'} transition-all duration-900 flex border-b md:border-b-0 md:border-r border-purple-600`} onClick={(e)=>{
+            e.preventDefault;
+            setProView(true);
+            setInd(1);
+          }}>
             <Card {...Data[1]} activeCard = {activeCard} setActiveCard = {setActiveCard}/>
           </div>
-          <div className={` ${activeCard == 2 ? 'h-[110%] md:h-full md:w-[110%]' : 'h-full w-full'} transition-all duration-900 flex`}>
+          <div className={` ${activeCard == 2 ? 'h-[110%] md:h-full md:w-[110%]' : 'h-full w-full'} transition-all duration-900 flex`} onClick={(e)=>{
+            e.preventDefault;
+            setProView(true);
+            setInd(2);
+          }}>
             <Card {...Data[2]} activeCard = {activeCard} setActiveCard = {setActiveCard}/>
           </div>         
         </div>

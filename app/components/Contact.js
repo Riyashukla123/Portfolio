@@ -30,19 +30,29 @@ export default function Contact(){
           </div>
           <div className="flex flex-row w-full border-t  [border-image:linear-gradient(to_right,#9810fa,#0f172b,#0f172b)_100%_1%] text-4xl  lg:text-5xl">
             <div className=" w-full flex py-5 lg:py-10 justify-center items-center border-r border-purple-600 ">
-              <FaInstagram className="bg-transparent text-yellow-200"/>
+              <a href="https://www.instagram.com/riya_shukla_0803/" target="_blank" rel="noopener noreferrer">
+              <FaInstagram className="bg-transparent text-yellow-200 hover:text-white"/>
+              </a>
             </div>
             <div className=" w-full flex py-5 lg:py-10 justify-center items-center border-r border-purple-600">
-              <FaFacebookF className="bg-transparent  text-yellow-200"/>
+              <a href="https://www.facebook.com/riya.shukla.340997/" target="_blank" rel="noopener noreferrer">
+              <FaFacebookF className="bg-transparent  text-yellow-200 hover:text-white"/>
+              </a>
             </div>
             <div className=" w-full flex py-5 lg:py-10 justify-center items-center border-r border-purple-600">
-              <FaTwitter className="bg-transparent text-yellow-200"/>
+              <a href="https://x.com/shukla_riy18436" target="blank" rel="noopener noreferrer">
+              <FaTwitter className="bg-transparent text-yellow-200 hover:text-white"/>
+              </a>
             </div>
             <div className=" w-full flex py-5 lg:py-10 justify-center items-center border-r border-purple-600">
-              <FaGithub className="bg-transparent text-yellow-200"/>
+              <a href="https://github.com/Riyashukla123" target="blank" rel="noopener noreferrer">
+              <FaGithub className="bg-transparent text-yellow-200 hover:text-white"/>
+              </a>
             </div>
             <div className=" w-full flex py-5 lg:py-10 justify-center items-center ">
-              <SiLeetcode className="bg-transparent text-yellow-200"/>
+              <a href="https://leetcode.com/u/riya70077/" target="blank" rel="noopener noreferrer" className="">
+              <SiLeetcode className="bg-transparent text-yellow-200 hover:text-white"/>
+              </a>
             </div>
           </div>
         </div>

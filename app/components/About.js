@@ -33,8 +33,8 @@ export default function About(){
             </div>
             <div className="flex justify-center p-4 md:px-16 md:pb-7 lg:pb-9 border-b border-purple-700">
               <p className={`text-[12.3px] md:text-[10px] lg:text-[14px]  tracking-widest text-white/80 ${varelaRound.className}`}>
-              Hello, my name is Riya Shukla. I am a full stack developer, I have working knowledge of MERN stack, docker, AWS, Nextjs, Tailwind CSS etc. I am currently pursuing M.tech in Computer Science from Indian Institute of Technology Jammu (IIT Jammu). <br></br>
-              <br></br>Hello, my name is Riya Shukla. I am a full stack developer, I have working knowledge of MERN stack, docker, AWS, Nextjs, Tailwind CSS etc. I am currently pursuing M.tech in Computer Science from Indian Institute of Technology Jammu (IIT Jammu).
+              Hello, I am Riya Shukla, a dedicated full stack developer with expertise in the MERN stack, Docker, AWS, Next.js, and Tailwind CSS. Currently pursuing my M.Tech in Computer Science at the Indian Institute of Technology Jammu, I am passionate about building scalable, user-centric web applications that solve real-world problems.<br></br> <br></br>
+               My diverse technical background, combined with a strong foundation in core computer science principles, enables me to deliver innovative solutions with precision and efficiency.
               
               </p>
             </div>
