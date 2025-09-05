@@ -14,12 +14,12 @@ export default function Nav({setMenu, menu}){
       </div>
       <div className="flex justify-end w-[calc(100%-120px)]">
        <div className="hidden md:flex flex-row ">
-        <button className={`flex flex-row gap-2 justify-center items-center text-lg hover:bg-purple-400/30 w-[130px] transition-colors duration-500 text-white/80 ${varelaRound.className} `}><FiDownload/> Resume</button>
-        <button className={`text-lg hover:bg-purple-400/30 w-[100px]  transition-colors duration-500 text-white/80 ${varelaRound.className}`}>Home</button>
-        <button className={`text-lg hover:bg-purple-400/30 w-[100px]  transition-colors duration-500 text-white/80 ${varelaRound.className}`}>About</button>
-        <button className={`text-lg hover:bg-purple-400/30 w-[100px]  transition-colors duration-500 text-white/80 ${varelaRound.className}`}>Projects</button>
-        <button className={`text-lg hover:bg-purple-400/30 w-[100px]  transition-colors duration-500 text-white/80 ${varelaRound.className}`}>Skills</button>
-        <button className={`text-lg hover:bg-purple-400/30 w-[100px]  transition-colors duration-500 text-white/80 ${varelaRound.className}`}>Contact
+        <button className={`flex flex-row cursor-pointer gap-2 justify-center items-center text-lg hover:bg-purple-400/30 w-[130px] transition-colors duration-500 text-white/80 ${varelaRound.className} `}><FiDownload/> Resume</button>
+        <button className={`text-lg cursor-pointer hover:bg-purple-400/30 w-[100px]  transition-colors duration-500 text-white/80 ${varelaRound.className}`}>Home</button>
+        <button className={`text-lg cursor-pointer hover:bg-purple-400/30 w-[100px]  transition-colors duration-500 text-white/80 ${varelaRound.className}`}>About</button>
+        <button className={`text-lg cursor-pointer hover:bg-purple-400/30 w-[100px]  transition-colors duration-500 text-white/80 ${varelaRound.className}`}>Projects</button>
+        <button className={`text-lg cursor-pointer hover:bg-purple-400/30 w-[100px]  transition-colors duration-500 text-white/80 ${varelaRound.className}`}>Skills</button>
+        <button className={`text-lg cursor-pointer hover:bg-purple-400/30 w-[100px]  transition-colors duration-500 text-white/80 ${varelaRound.className}`}>Contact
         </button>
        </div>
       </div>
