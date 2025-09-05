@@ -17,7 +17,7 @@ export default function Projects({setProView, setInd}){
         <div className="h-full w-[50px] border-r border-slate-500"></div>
         <div className="h-full w-[calc(100%-100px)]"></div>
         <div className="h-full w-[50px] border-l border-slate-500 flex justify-center items-center">
-          <IoCloseSharp className="text-red text-xl" onClick={(e)=>{
+          <IoCloseSharp className="text-red-400 text-4xl" onClick={(e)=>{
             e.preventDefault;
             setProView(false);
             setInd(null);
