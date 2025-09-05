@@ -20,19 +20,19 @@ export default function Home(){
             <GoNorthStar className="bg-transparent text-5xl lg:text-7xl text-yellow-100"/>
           </div>
           <div className="w-full h-full px-8 md:px-16 flex items-center justify-center md:justify-start border-b border-slate-800">
-            <p className={`text-4xl sm:text-5xl md:text-7xl lg:text-8xl tracking-widest ${audiowide.className}`}>INNOVATIVE</p>
+            <p className={`text-4xl sm:text-5xl md:text-7xl lg:text-8xl tracking-widest ${audiowide.className}`}> DEVELOPMENT</p>
           </div>
           <div className="w-full h-full px-8 md:px-16 flex items-center justify-center md:justify-start border-b border-slate-800">
-            <p className={`text-4xl sm:text-5xl md:text-7xl lg:text-8xl tracking-widest ${audiowide.className} `}>DESIGN</p>
+            <p className={`text-4xl sm:text-5xl md:text-7xl lg:text-8xl tracking-widest ${audiowide.className} `}>EXPERTISE</p>
           </div>
           <div className="w-full h-full items-center px-8 md:px-16 border-b border-slate-800 flex flex-row justify-end">
             <div className=" w-full md:w-3/4 lg:w-1/2">
-              <p className={`text-[15px] sm:text-lg md:text-xl tracking-widest text-justify text-white/80 ${varelaRound.className}`}> Your ideas, our expertise, endless dimensions, redefining spaces, one amazing design at a time, precision-crafted designs for every vision</p>
+              <p className={`text-[15px] sm:text-lg md:text-xl tracking-widest text-justify text-white/80 ${varelaRound.className}`}> My portfolio demonstrates a diverse range of projects showcasing my full stack development skills from developing responsive web applications to deploying scalable solutions on the cloud.</p>
             </div>
           </div>
           <div className="w-full" />
           <div className="w-full items-center h-full px-8 md:px-16 flex flex-row justify-center md:justify-end">
-            <p className={`text-4xl sm:text-5xl md:text-7xl lg:text-8xl  tracking-widest  ${audiowide.className}`}>VISUALIZE</p>
+            <p className={`text-4xl sm:text-5xl md:text-7xl lg:text-8xl  tracking-widest  ${audiowide.className}`}>CREATIVITY</p>
           </div>
         </div>
         
@@ -47,21 +47,22 @@ export default function Home(){
         <div className="w-[calc(100%-120px)] flex flex-row px-16 justify-between">
           <div className="flex  gap-6">
             <div className="flex justify-center items-center ">
-             <FaFacebookF className="w-6 h-6  flex items-center justify-center   text-white  hover:text-slate-500 cursor-pointer"/>
+              <a href="https://www.facebook.com/riya.shukla.340997/" target="_blank" rel="noopener noreferrer"> <FaFacebookF className="w-6 h-6  flex items-center justify-center   text-white  hover:text-slate-500 cursor-pointer"/></a>
             </div>
             <div className="flex justify-center items-center ">
-             <FaInstagram className="w-6 h-6 flex items-center justify-center   text-white  hover:text-slate-500 cursor-pointer"/>
+              <a href="https://www.instagram.com/riya_shukla_0803/" target="_blank" rel="noopener noreferrer"> <FaInstagram className="w-6 h-6 flex items-center justify-center   text-white  hover:text-slate-500 cursor-pointer"/></a>
             </div>
             <div className="flex justify-center items-center ">
-             <FaTwitter className="w-6 h-6 flex items-center justify-center   text-white  hover:text-slate-500 cursor-pointer"/>
+              <a href="https://x.com/shukla_riy18436" target="blank" rel="noopener noreferrer"><FaTwitter className="w-6 h-6 flex items-center justify-center   text-white  hover:text-slate-500 cursor-pointer"/></a>
             </div>
             <div className="flex justify-center items-center ">
-             <FaGithub className="w-6 h-6 flex items-center justify-center   text-white  hover:text-slate-500 cursor-pointer"/>
+              <a href="https://github.com/Riyashukla123" target="blank" rel="noopener noreferrer"><FaGithub className="w-6 h-6 flex items-center justify-center   text-white  hover:text-slate-500 cursor-pointer"/></a>
             </div>
             <div className="flex justify-center items-center ">
-             <SiLeetcode className="w-6 h-6 flex items-center justify-center   text-white  hover:text-slate-500 cursor-pointer"/>
+              <a href="https://leetcode.com/u/riya70077/" target="blank" rel="noopener noreferrer"><SiLeetcode className="w-6 h-6 flex items-center justify-center   text-white  hover:text-slate-500 cursor-pointer"/></a>
             </div>
           </div>
+          
 
           <div>
             <p className="hidden sm:text-sm sm:block lg:text-lg text-purple-700 ">MY NAME IS RIYA SHUKLA</p>

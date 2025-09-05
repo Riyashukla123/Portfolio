@@ -4,7 +4,7 @@ import { FaTwitter, FaFacebookF, FaInstagram, FaGithub, } from 'react-icons/fa';
 import { BiTargetLock } from "react-icons/bi";
 import { MdArrowDownward } from "react-icons/md";
 import Image from "next/image"
-import prof1 from "../../public/prof1.png"
+
 import prof2 from "../../public/prof2.png"
 const audiowide = Audiowide({ subsets: ['latin'], weight: ['400'] });
 
@@ -33,10 +33,10 @@ export default function About(){
             <div className=" p-4 md:px-16  border-b border-slate-800">
               <p className={`text-2xl md:text-3xl lg:text-[4vw] tracking-widest leading-none  ${audiowide.className} w-[150px] md:w-[200px] lg:w-[30vw]`}>Know Me More</p>
             </div>
-            <div className="flex justify-center p-4 md:px-16 md:pb-7 lg:pb-9 border-b border-slate-800">
+            <div className="flex justify-center p-4 md:px-16 md:pb-7 lg:pb-11 border-b border-slate-800">
               <p className={`text-[12.3px] md:text-[10px] lg:text-[14px]  tracking-widest text-white/80 ${varelaRound.className}`}>
-              Hello, my name is Riya Shukla. I am a full stack developer, I have working knowledge of MERN stack, docker, AWS, Nextjs, Tailwind CSS etc. I am currently pursuing M.tech in Computer Science from Indian Institute of Technology Jammu (IIT Jammu). <br></br>
-              <br></br>Hello, my name is Riya Shukla. I am a full stack developer, I have working knowledge of MERN stack, docker, AWS, Nextjs, Tailwind CSS etc. I am currently pursuing M.tech in Computer Science from Indian Institute of Technology Jammu (IIT Jammu).
+              Hello, I am Riya Shukla, a dedicated full stack developer with expertise in the MERN stack, Docker, AWS, Next.js, and Tailwind CSS. Currently pursuing my M.Tech in Computer Science at the Indian Institute of Technology Jammu, I am passionate about building scalable, user-centric web applications that solve real-world problems.<br></br> <br></br>
+               My diverse technical background, combined with a strong foundation in core computer science principles, enables me to deliver innovative solutions with precision and efficiency.
               
               </p>
             </div>

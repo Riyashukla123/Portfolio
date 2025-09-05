@@ -9,7 +9,7 @@ const audiowide = Audiowide({ subsets: ['latin'], weight: ['400'] });
 const varelaRound = Varela_Round({ subsets: ['latin'], weight: '400' });
 
 
-export default function Services(){
+export default function Services({setProView, setInd}){
   return(
    <div className="flex flex-col w-full h-screen bg-purple-700">
     <div className="flex flex-row w-full h-[calc(100%-60px)]">
@@ -25,13 +25,25 @@ export default function Services(){
           </div>
         </div>
         <div className="h-full w-full flex flex-col md:flex-row">
-          <div className="h-full w-full flex border-b md:border-b-0 md:border-r border-slate-700">
+          <div className="h-full w-full flex border-b md:border-b-0 md:border-r border-slate-700" onClick={(e)=>{
+            e.preventDefault;
+            setProView(true);
+            setInd(0);
+          }}>
             <Card {...Data[0]}/>
           </div>
-          <div className="h-full w-full flex border-b md:border-b-0 md:border-r border-slate-700">
+          <div className="h-full w-full flex border-b md:border-b-0 md:border-r border-slate-700" onClick={(e)=>{
+            e.preventDefault;
+            setProView(true);
+            setInd(1);
+          }}>
             <Card {...Data[1]}/>
           </div>
-          <div className="h-full w-full flex">
+          <div className="h-full w-full flex" onClick={(e)=>{
+            e.preventDefault;
+            setProView(true);
+            setInd(2);
+          }}>
             <Card {...Data[2]}/>
           </div>         
         </div>
