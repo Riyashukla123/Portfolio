@@ -4,7 +4,6 @@ import { FaTwitter, FaFacebookF, FaInstagram, FaGithub, } from 'react-icons/fa';
 import { BiTargetLock } from "react-icons/bi";
 import { MdArrowDownward } from "react-icons/md";
 import Image from "next/image"
-import prof1 from "../../public/prof1.png"
 import prof2 from "../../public/prof4.png"
 const audiowide = Audiowide({ subsets: ['latin'], weight: ['400'] });
 
