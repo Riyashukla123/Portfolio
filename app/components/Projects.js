@@ -12,7 +12,7 @@ const varelaRound = Varela_Round({ subsets: ['latin'], weight: '400' });
 
 export default function Projects({setProView, setInd}){
   return(
-    <div className="fixed z-20000 flex flex-col h-screen w-full bg-purple-700 border border-slate-500">
+    <div className="fixed z-20000 flex flex-col h-dvh md:h-screen w-full bg-purple-700 border border-slate-500">
        <div className="w-full h-[50px] flex flex-row">
         <div className="h-full w-[50px] border-r border-slate-500"></div>
         <div className="h-full w-[calc(100%-100px)]"></div>

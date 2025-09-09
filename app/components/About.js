@@ -11,7 +11,7 @@ const varelaRound = Varela_Round({ subsets: ['latin'], weight: '400' });
 
 export default function About(){
   return (
-    <div id="about" className="flex flex-col w-full h-screen min-h-screen snap-start justify-between  bg-[radial-gradient(100%_100%_at_50%_top,#000,#000,#8200db)] ">
+    <div id="about" className="flex flex-col w-full h-dvh md:h-screen min-h-dvh md:h-screen snap-start justify-between  bg-[radial-gradient(100%_100%_at_50%_top,#000,#000,#8200db)] ">
       <div className="h-full w-full flex flex-row justify-between overflow-hidden">
         <div className="w-[60px] items-center border-r  [border-image:linear-gradient(to_bottom,#1d293d,#1d293d,#9810fa)_1_100%]"> 
         </div>

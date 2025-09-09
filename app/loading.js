@@ -7,7 +7,7 @@ const varelaRound = Varela_Round({ subsets: ['latin'], weight: '400' });
 
 const Loading = () => {
   return (
-    <div className="flex flex-col justify-center items-center h-screen w-full fixed bg-black">
+    <div className="flex flex-col justify-center items-center h-dvh md:h-screen w-full fixed bg-black">
       <div className="object-contain flex justify-center items-center">
         <Image src="/logo.png" alt="logo" width={200} height={200} />
       </div>

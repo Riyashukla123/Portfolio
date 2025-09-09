@@ -33,11 +33,11 @@ export default function Main(){
     return () => window.removeEventListener("load", handleLoad);
   }, []);
   return(
-    <div className="flex flex-col h-screen overflow-y-scroll snap-y snap-mandatory">
-      <div className={`${loading ? 'translate-y-0' : ' -translate-y-full'} transition-all duration-900 flex flex-col justify-between fixed h-screen w-screen items-center z-50 bg-purple-700`}>
+    <div className="flex flex-col h-dvh md:h-screen overflow-y-scroll snap-y snap-mandatory">
+      <div className={`${loading ? 'translate-y-0' : ' -translate-y-full'} transition-all duration-900 flex flex-col justify-between fixed h-dvh md:h-screen w-screen items-center z-50 bg-purple-700`}>
            <LoadingScreen /> 
       </div>
-      <div id="home" className="relative w-full h-screen min-h-screen snap-start object-contain flex flex-col">
+      <div id="home" className="relative w-full h-dvh md:h-screen min-h-dvh md:h-screen snap-start object-contain flex flex-col">
         <Background />
         <Nav setMenu={setMenu} menu={menu}/>
         <Home/>

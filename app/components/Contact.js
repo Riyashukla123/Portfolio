@@ -10,7 +10,7 @@ const varelaRound = Varela_Round({ subsets: ['latin'], weight: '400' });
 
 export default function Contact(){
   return(
-   <div id="contact" className="flex flex-col w-full h-screen snap-start min-h-screen justify-between  bg-[radial-gradient(80%_70%_at_center,#000000_50%,#8200db)]">
+   <div id="contact" className="flex flex-col w-full h-dvh md:h-screen snap-start min-h-dvh md:h-screen justify-between  bg-[radial-gradient(80%_70%_at_center,#000000_50%,#8200db)]">
     <div className="w-full h-[calc(100%-60px)] flex flex-row">
       <div className="w-[60px] items-center border-r [border-image:linear-gradient(to_bottom,#9810fa,#0f172b,#9810fa)_1_100%]"></div>
       <div className="h-full w-[calc(100%-120px)] hidden sm:flex flex-row">
