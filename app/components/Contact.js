@@ -78,9 +78,9 @@ export default function Contact(){
               <div className=" w-full pb-4 flex justify-center ">
                 <p className={`inline text-[14px] md:text-[17px] lg:text-[21px] tracking-widest leading-none text-white  ${audiowide.className}`}>My works</p>
               </div>
-              <p className={`inline text-[13px] md:text-[14px] lg:text-[19px] tracking-widest leading-none text-white  ${varelaRound.className}`}>Real Estate Solution</p>
-              <p className={`inline text-[13px] md:text-[14px] lg:text-[19px] tracking-widest leading-none text-white  ${varelaRound.className}`}>Showtime</p>
-              <p className={`inline text-[13px] md:text-[14px] lg:text-[19px] tracking-widest leading-none text-white  ${varelaRound.className}`}>Decentragram</p>
+              <p className={`inline text-[13px] md:text-[14px] lg:text-[19px] tracking-widest leading-none text-white  ${varelaRound.className}`}><Link href="https://github.com/Riyashukla123/real_estate_management_system">Real Estate Solution</Link></p>
+              <p className={`inline text-[13px] md:text-[14px] lg:text-[19px] tracking-widest leading-none text-white  ${varelaRound.className}`}><Link href="https://github.com/Riyashukla123/Netflix-home-page-clone">Showtime</Link></p>
+              <p className={`inline text-[13px] md:text-[14px] lg:text-[19px] tracking-widest leading-none text-white  ${varelaRound.className}`}><Link href="https://github.com/Riyashukla123/Portfolio">Portfolio</Link></p>
               
              </div>
           </div>
@@ -121,9 +121,9 @@ export default function Contact(){
               <div className=" w-full pb-2 flex justify-center ">
                 <p className={`inline text-[14px] md:text-[17px] lg:text-[21px] tracking-widest leading-none text-white  ${audiowide.className}`}>My Works</p>
               </div>
-              <p className={`inline text-[13px] md:text-[14px] lg:text-[19px] tracking-widest text-center leading-none text-white  ${varelaRound.className}`}>Real Estate Solution</p>
-              <p className={`inline text-[13px] md:text-[14px] lg:text-[19px] tracking-widest leading-none text-white  ${varelaRound.className}`}>Showtime</p>
-              <p className={`inline text-[13px] md:text-[14px] lg:text-[19px] tracking-widest leading-none text-white  ${varelaRound.className}`}>Decentragram</p>
+              <p className={`inline text-[13px] md:text-[14px] lg:text-[19px] tracking-widest leading-none text-white  ${varelaRound.className}`}><Link href="https://github.com/Riyashukla123/real_estate_management_system">Real Estate Solution</Link></p>
+              <p className={`inline text-[13px] md:text-[14px] lg:text-[19px] tracking-widest leading-none text-white  ${varelaRound.className}`}><Link href="https://github.com/Riyashukla123/Netflix-home-page-clone">Showtime</Link></p>
+              <p className={`inline text-[13px] md:text-[14px] lg:text-[19px] tracking-widest leading-none text-white  ${varelaRound.className}`}><Link href="https://github.com/Riyashukla123/Portfolio">Portfolio</Link></p>
               
              </div>
           </div>

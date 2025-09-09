@@ -10,13 +10,13 @@ const audiowide = Audiowide({ subsets: ['latin'], weight: ['400'] });
 
 const varelaRound = Varela_Round({ subsets: ['latin'], weight: '400' });
 
-export default function Projects({setProView, setInd}){
+export default function Projects({setProView, setInd, data}){
   return(
-    <div className="fixed z-20000 flex flex-col h-dvh md:h-screen w-full bg-purple-700 border border-slate-500">
+    <div className="fixed z-50 top-0 flex flex-col h-dvh md:h-screen w-full bg-purple-700 border border-purple-400">
        <div className="w-full h-[50px] flex flex-row">
-        <div className="h-full w-[50px] border-r border-slate-500"></div>
+        <div className="h-full w-[50px] border-r border-purple-400"></div>
         <div className="h-full w-[calc(100%-100px)]"></div>
-        <div className="h-full w-[50px] border-l border-slate-500 flex justify-center items-center">
+        <div className="h-full w-[50px] border-l border-purple-400 flex justify-center items-center">
           <IoCloseSharp className="text-red-400 text-4xl" onClick={(e)=>{
             e.preventDefault;
             setProView(false);
@@ -24,51 +24,43 @@ export default function Projects({setProView, setInd}){
           }} />
         </div>
        </div>
-       <div className="w-full h-[calc(100%-100px)] border-y border-slate-500 flex flex-row">
-        <div className="h-full w-[50px] border-r border-slate-500"></div>
-        <div className="h-full w-[calc(100%-100px)] flex flex-row justify-between">
-          <div className="w-1/2 h-full flex flex-col border-r border-slate-500 ">
-            <div className="w-full flex flex-row  h-2/5">
-              <div className="border-r border-slate-500 w-1/2 h-full object-cover">
-              <Image width={700} height={500} priority={false} src={cor} alt="cor" className=" w-full h-full object-cover"/>
-              </div>
-              <div className="w-1/2 h-full object-cover">
-              <Image width={700} height={500} priority={false} src={checks} alt="cor" className=" w-full h-full object-cover"/>
-              </div>
+       <div className="w-full h-[calc(100%-100px)] border-y border-purple-400 flex flex-row">
+        <div className="h-full w-[50px] border-r border-purple-400"></div>
+        <div className="h-full w-[calc(100%-100px)] flex flex-col md:flex-row justify-between">
+          <div className="w-full md:w-1/2 h-1/2 md:h-full flex flex-col border-r border-purple-400 ">
+            <div className="w-full flex flex-row relative h-full">
+              <Image width={300} height={300} priority={false} src={data.image} alt="projectimage" className=" w-full h-full object-cover"/>
+              <div className="absolute top-0 left-0 w-full h-full bg-white/5 backdrop-blur-md"></div>
+              <Image width={700} height={500} priority={false} src={data.image} alt="Project image" className=" absolute top-[10%] left-[10%] w-[80%] h-[80%] object-cover"/>
             </div>
             
-            <div className="w-full flex flex-row h-3/5">
-              <div className=" w-full h-full overflow-hidden object-contain">
-                {/* <video
-                  autoPlay
-                  loop
-                  muted
-                  playsInline
-                  className="w-full h-full object-cover z-1000">
-                  <source src="/V7.mp4" type="video/mp4" />
-                  Your browser does not support the video tag.
-                </video> */}
-               
+            
+          </div>
+          <div className="w-full md:w-1/2 h-1/2 md:h-full flex flex-col">
+            <div className="relative h-full md:h-2/3 w-full border-b border-purple-400 flex flex-col p-4 md:p-8 ">
+              <p className={`hidden md:inline text-5xl leading-none  ${audiowide.className} w-[300px]`}>What I Did</p>
+              <p className={`text-lg md:text-2xl md:mt-2 text-justify inline  tracking-widest text-white/80 ${varelaRound.className}`}>{data.name}</p>
+              <p className={`text-md md:text-lg mt-2 text-justify inline  tracking-widest text-white/80 ${varelaRound.className}`}>{data.stack}</p>
+              <p className={`text-xs md:text-[14px] mt-2 text-justify inline  tracking-widest text-white/80 ${varelaRound.className}`}>{data.description}</p>
+              <p className={`text-xs md:text-[12px] mt-2 text-justify inline  tracking-widest text-white/80 ${varelaRound.className}`}>Tech Stack: {data.techStack.join(", ")}</p>
+              <div className="absolute bottom-0 left-0 w-full border-t border-purple-400 flex flex-row ">
+                <a href={data.Code} target="blank" className={`w-1/2 text-center py-2 md:py-4 hover:bg-purple-400/30  transition-colors duration-500 text-white/80 cursor-pointer ${varelaRound.className} border-r border-purple-400`}>View Code</a>
+                <a href={data.Live} target="blank" className={`w-1/2 text-center py-2 md:py-4 hover:bg-purple-400/30  transition-colors duration-500 text-white/80 cursor-pointer ${varelaRound.className}`}>Live Demo</a>
               </div>
             </div>
-          </div>
-          <div className="w-1/2 h-full flex flex-col">
-            <div className="h-2/3 w-full border-b border-slate-500 flex flex-col p-8 ">
-            <p className={`text-5xl tracking-widest leading-none  ${audiowide.className} w-[300px]`}>What I Did</p>
-            </div>
-            <div className="h-1/3 w-full object-cover">
+            <div className="hidden md:block h-1/3 w-full object-cover">
             <Image width={700} height={500} priority={false} src={cush} alt="cor" className=" w-full h-full object-cover"/>
             </div>
           </div>
         </div>
-        <div className="h-full w-[50px] border-l border-slate-500"></div>
+        <div className="h-full w-[50px] border-l border-purple-400"></div>
        </div>
        <div className="w-full h-[50px] flex flex-row">
-        <div className="h-full w-[50px] border-r border-slate-500"></div>
+        <div className="h-full w-[50px] border-r border-purple-400"></div>
         <div className="h-full w-[calc(100%-100px)]">
           
         </div>
-        <div className="h-full w-[50px] border-l border-slate-500"></div>
+        <div className="h-full w-[50px] border-l border-purple-400"></div>
        </div>
     </div>
   );

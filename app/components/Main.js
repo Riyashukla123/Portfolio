@@ -8,7 +8,6 @@ import { Audiowide, Varela_Round } from 'next/font/google';
 import Services from "./Services.js";
 import Skills from "./Skills.js";
 import Contact from "./Contact.js";
-import Projects from "./Projects.js";
 import LoadingScreen from "./LoadingScreen.js";
 import Background from "./Background.js";
 
@@ -52,10 +51,9 @@ export default function Main(){
         </div>
       </div>
        <About/>
-       <Services setProView={setProView} setInd={setInd}/>
+       <Services proView = {proView} ind = {ind} setProView={setProView} setInd={setInd}/>
        <Skills/>     
        <Contact/> 
-       {proView && <Projects setProView={setProView} setInd={setInd}/>}
        
     </div>
   );
