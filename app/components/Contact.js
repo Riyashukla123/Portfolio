@@ -1,17 +1,16 @@
 'use Client'
 import {Audiowide, Varela_Round } from 'next/font/google'
 import Image from "next/image"
-import { MdArrowDownward, MdMail } from "react-icons/md";
 import { FaTwitter, FaFacebookF, FaInstagram, FaGithub, FaPhoneAlt,FaLinkedin } from 'react-icons/fa';
 import { FiArrowUpRight } from 'react-icons/fi';
-import { SiTelegram } from "react-icons/si";
 import { SiLeetcode } from "react-icons/si";
+import Link from 'next/link';
 const audiowide = Audiowide({ subsets: ['latin'], weight: ['400'] });
 const varelaRound = Varela_Round({ subsets: ['latin'], weight: '400' });
 
 export default function Contact(){
   return(
-   <div className="flex flex-col w-full h-screen snap-start min-h-screen justify-between  bg-[radial-gradient(80%_70%_at_center,#000000_50%,#8200db)]">
+   <div id="contact" className="flex flex-col w-full h-screen snap-start min-h-screen justify-between  bg-[radial-gradient(80%_70%_at_center,#000000_50%,#8200db)]">
     <div className="w-full h-[calc(100%-60px)] flex flex-row">
       <div className="w-[60px] items-center border-r [border-image:linear-gradient(to_bottom,#9810fa,#0f172b,#9810fa)_1_100%]"></div>
       <div className="h-full w-[calc(100%-120px)] hidden sm:flex flex-row">
@@ -57,45 +56,31 @@ export default function Contact(){
           </div>
         </div>
         <div className="h-full w-1/2 flex flex-col justify-between">
-          <div className="h-1/2 w-full border-b border-slate-900 flex flex-row px-8 py-10 justify-center items-center">
-            <div className="h-full w-1/2 flex flex-col gap-2 justify-center items-center">
-              <div className="flex justify-center  w-full pb-4">
-                <p className={`inline text-[14px] md:text-[17px] lg:text-[21px] tracking-widest leading-none text-white  ${audiowide.className}`}>Services</p>
-              </div>
-              <p className={`inline text-[13px] md:text-[14px] lg:text-[19px] tracking-widest leading-none text-white  ${varelaRound.className}`}>Services</p>
-              <p className={`inline text-[13px] md:text-[14px] lg:text-[19px] tracking-widest leading-none text-white  ${varelaRound.className}`}>Services</p>
-              <p className={`inline text-[13px] md:text-[14px] lg:text-[19px] tracking-widest leading-none text-white  ${varelaRound.className}`}>Services</p>
-              <p className={`inline text-[13px] md:text-[14px] lg:text-[19px] tracking-widest leading-none text-white  ${varelaRound.className}`}>Services</p>
-              <p className={`inline text-[13px] md:text-[14px] lg:text-[19px] tracking-widest leading-none text-white  ${varelaRound.className}`}>Services</p>
-             </div>
-             <div className="h-full w-1/2 flex flex-col gap-2 justify-center items-center">
-              <div className=" w-full pb-4 flex justify-center ">
-                <p className={`inline text-[14px] md:text-[17px] lg:text-[21px] tracking-widest leading-none text-white  ${audiowide.className}`}>Resources</p>
-              </div>
-              <p className={`inline text-[13px] md:text-[14px] lg:text-[19px] tracking-widest leading-none text-white  ${varelaRound.className}`}>Services</p>
-              <p className={`inline text-[13px] md:text-[14px] lg:text-[19px] tracking-widest leading-none text-white  ${varelaRound.className}`}>Services</p>
-              <p className={`inline text-[13px] md:text-[14px] lg:text-[19px] tracking-widest leading-none text-white  ${varelaRound.className}`}>Services</p>
-              <p className={`inline text-[13px] md:text-[14px] lg:text-[19px] tracking-widest leading-none text-white  ${varelaRound.className}`}>Services</p>
-             </div>
+          <div className="h-1/2 w-full border-b border-slate-900 flex flex-row p-2 justify-center items-center">
+            <div className="h-full w-full flex flex-col gap-2 justify-center items-center">
+              <input type="email" placeholder="Email" className={`w-full h-20 p-2 bg-transparent border border-white text-white placeholder-white  ${varelaRound.className} focus:outline-none focus:border-purple-400`}/>
+              <textarea placeholder="Message" className={`w-full h-full p-2 bg-transparent border border-white text-white placeholder-white  ${varelaRound.className} focus:outline-none focus:border-purple-400 resize-none`}/>
+              <button className={`w-full p-4 border border-white bg-transparent text-white hover:bg-white transition-all hover:text-purple-700  ${audiowide.className}`}>Send Message <FiArrowUpRight className="inline ml-2"/></button>
+            </div>
           </div>
           <div className="h-1/2 w-full flex flex-row px-8 py-10 justify-center items-center">
             <div className="h-full w-1/2 flex flex-col gap-2 justify-center items-center">
               <div className="flex justify-center  w-full pb-4">
-                <p className={`inline text-[14px] md:text-[17px] lg:text-[21px] tracking-widest leading-none text-white  ${audiowide.className}`}>More From Us</p>
+                <p className={`inline text-[14px] md:text-[17px] lg:text-[21px] tracking-widest leading-none text-white  ${audiowide.className}`}>Explore</p>
               </div>
-              <p className={`inline text-[13px] md:text-[14px] lg:text-[19px] tracking-widest leading-none text-white  ${varelaRound.className}`}>Services</p>
-              <p className={`inline text-[13px] md:text-[14px] lg:text-[19px] tracking-widest leading-none text-white  ${varelaRound.className}`}>Services</p>
-              <p className={`inline text-[13px] md:text-[14px] lg:text-[19px] tracking-widest leading-none text-white  ${varelaRound.className}`}>Services</p>
-              <p className={`inline text-[13px] md:text-[14px] lg:text-[19px] tracking-widest leading-none text-white  ${varelaRound.className}`}>Services</p>
-              <p className={`inline text-[13px] md:text-[14px] lg:text-[19px] tracking-widest leading-none text-white  ${varelaRound.className}`}>Services</p>
+              <p className={`inline text-[13px] md:text-[14px] lg:text-[19px] tracking-widest leading-none text-white  ${varelaRound.className}`}><Link href="#home">Home</Link></p>
+              <p className={`inline text-[13px] md:text-[14px] lg:text-[19px] tracking-widest leading-none text-white  ${varelaRound.className}`}><Link href="#about">About</Link></p>
+              <p className={`inline text-[13px] md:text-[14px] lg:text-[19px] tracking-widest leading-none text-white  ${varelaRound.className}`}><Link href="#services">Projects</Link></p>
+              <p className={`inline text-[13px] md:text-[14px] lg:text-[19px] tracking-widest leading-none text-white  ${varelaRound.className}`}><Link href="#skills">Skills</Link></p>
+              <p className={`inline text-[13px] md:text-[14px] lg:text-[19px] tracking-widest leading-none text-white  ${varelaRound.className}`}><Link href="#contact">Contact</Link></p>
              </div>
              <div className="h-full w-1/2 flex flex-col gap-2 justify-center items-center">
               <div className=" w-full pb-4 flex justify-center ">
-                <p className={`inline text-[14px] md:text-[17px] lg:text-[21px] tracking-widest leading-none text-white  ${audiowide.className}`}>Company</p>
+                <p className={`inline text-[14px] md:text-[17px] lg:text-[21px] tracking-widest leading-none text-white  ${audiowide.className}`}>My works</p>
               </div>
-              <p className={`inline text-[13px] md:text-[14px] lg:text-[19px] tracking-widest leading-none text-white  ${varelaRound.className}`}>Services</p>
-              <p className={`inline text-[13px] md:text-[14px] lg:text-[19px] tracking-widest leading-none text-white  ${varelaRound.className}`}>Services</p>
-              <p className={`inline text-[13px] md:text-[14px] lg:text-[19px] tracking-widest leading-none text-white  ${varelaRound.className}`}>Services</p>
+              <p className={`inline text-[13px] md:text-[14px] lg:text-[19px] tracking-widest leading-none text-white  ${varelaRound.className}`}>Real Estate Solution</p>
+              <p className={`inline text-[13px] md:text-[14px] lg:text-[19px] tracking-widest leading-none text-white  ${varelaRound.className}`}>Showtime</p>
+              <p className={`inline text-[13px] md:text-[14px] lg:text-[19px] tracking-widest leading-none text-white  ${varelaRound.className}`}>Decentragram</p>
               
              </div>
           </div>
@@ -112,42 +97,33 @@ export default function Contact(){
             </p>
           </div>
         </div>
-        <div className="h-1/2 w-full border-b border-purple-600 flex flex-row px-3 md:px-8 py-4 md:py-10 justify-center items-center">
-            <div className="h-full w-1/2 flex flex-col gap-2 justify-center items-center">
-              <div className="flex justify-center  w-full pb-4">
-                <p className={`inline text-[14px] md:text-[17px] lg:text-[21px] tracking-widest leading-none text-white  ${audiowide.className}`}>Services</p>
-              </div>
-              <p className={`inline text-[13px] md:text-[14px] lg:text-[19px] tracking-widest leading-none text-white  ${varelaRound.className}`}>Services</p>
-              <p className={`inline text-[13px] md:text-[14px] lg:text-[19px] tracking-widest leading-none text-white  ${varelaRound.className}`}>Services</p>
-              <p className={`inline text-[13px] md:text-[14px] lg:text-[19px] tracking-widest leading-none text-white  ${varelaRound.className}`}>Services</p>
-              <p className={`inline text-[13px] md:text-[14px] lg:text-[19px] tracking-widest leading-none text-white  ${varelaRound.className}`}>Services</p>
-             </div>
-             <div className="h-full w-1/2 flex flex-col gap-2 justify-center items-center">
-              <div className=" w-full pb-4 flex justify-center ">
-                <p className={`inline text-[14px] md:text-[17px] lg:text-[21px] tracking-widest leading-none text-white  ${audiowide.className}`}>Resources</p>
-              </div>
-              <p className={`inline text-[13px] md:text-[14px] lg:text-[19px] tracking-widest leading-none text-white  ${varelaRound.className}`}>Services</p>
-              <p className={`inline text-[13px] md:text-[14px] lg:text-[19px] tracking-widest leading-none text-white  ${varelaRound.className}`}>Services</p>
-              <p className={`inline text-[13px] md:text-[14px] lg:text-[19px] tracking-widest leading-none text-white  ${varelaRound.className}`}>Services</p>
-              <p className={`inline text-[13px] md:text-[14px] lg:text-[19px] tracking-widest leading-none text-white  ${varelaRound.className}`}>Services</p>
-             </div>
+        <div className="h-1/2 w-full border-b border-purple-600 flex flex-row p-2 justify-center items-center">
+          <div className="h-full w-full border-b border-slate-900 flex flex-row p-2 justify-center items-center">
+            <div className="h-full w-full flex flex-col gap-2 justify-center items-center">
+              <input type="email" placeholder="Email" className={`w-full h-20 p-2 bg-transparent border border-white text-white placeholder-white  ${varelaRound.className} focus:outline-none focus:border-purple-400`}/>
+              <textarea placeholder="Message" className={`w-full h-full p-2 bg-transparent border border-white text-white placeholder-white  ${varelaRound.className} focus:outline-none focus:border-purple-400 resize-none`}/>
+              <button className={`w-full p-2 border border-white bg-transparent text-white hover:bg-white transition-all hover:text-purple-700  ${audiowide.className}`}>Send Message <FiArrowUpRight className="inline ml-2"/></button>
+            </div>
+          </div>
+             
           </div>
           <div className="h-1/2 w-full border-b border-purple-600 flex flex-row px-3 md:px-8 py-4 md:py-10 justify-center items-center">
             <div className="h-full w-1/2 flex flex-col gap-2 justify-center items-center">
-              <div className="flex justify-center  w-full pb-4">
-                <p className={`inline text-[14px] md:text-[17px] lg:text-[21px] tracking-widest leading-none text-white  ${audiowide.className}`}>More From Us</p>
+              <div className="flex justify-center  w-full pb-2">
+                <p className={`inline text-[14px] md:text-[17px] lg:text-[21px] tracking-widest leading-none text-white  ${audiowide.className}`}>Explore</p>
               </div>
-              <p className={`inline text-[13px] md:text-[14px] lg:text-[19px] tracking-widest leading-none text-white  ${varelaRound.className}`}>Services</p>
-              <p className={`inline text-[13px] md:text-[14px] lg:text-[19px] tracking-widest leading-none text-white  ${varelaRound.className}`}>Services</p>
-              <p className={`inline text-[13px] md:text-[14px] lg:text-[19px] tracking-widest leading-none text-white  ${varelaRound.className}`}>Services</p>
+              <p className={`inline text-[13px] md:text-[14px] lg:text-[19px] tracking-widest leading-none text-white  ${varelaRound.className}`}><Link href="#home">Home</Link></p>
+              <p className={`inline text-[13px] md:text-[14px] lg:text-[19px] tracking-widest leading-none text-white  ${varelaRound.className}`}><Link href="#about">About</Link></p>
+              <p className={`inline text-[13px] md:text-[14px] lg:text-[19px] tracking-widest leading-none text-white  ${varelaRound.className}`}><Link href="#services">Projects</Link></p>
+              <p className={`inline text-[13px] md:text-[14px] lg:text-[19px] tracking-widest leading-none text-white  ${varelaRound.className}`}><Link href="#skills">Skills</Link></p>
              </div>
              <div className="h-full w-1/2 flex flex-col gap-2 justify-center items-center">
-              <div className=" w-full pb-4 flex justify-center ">
-                <p className={`inline text-[14px] md:text-[17px] lg:text-[21px] tracking-widest leading-none text-white  ${audiowide.className}`}>Company</p>
+              <div className=" w-full pb-2 flex justify-center ">
+                <p className={`inline text-[14px] md:text-[17px] lg:text-[21px] tracking-widest leading-none text-white  ${audiowide.className}`}>My Works</p>
               </div>
-              <p className={`inline text-[13px] md:text-[14px] lg:text-[19px] tracking-widest leading-none text-white  ${varelaRound.className}`}>Services</p>
-              <p className={`inline text-[13px] md:text-[14px] lg:text-[19px] tracking-widest leading-none text-white  ${varelaRound.className}`}>Services</p>
-              <p className={`inline text-[13px] md:text-[14px] lg:text-[19px] tracking-widest leading-none text-white  ${varelaRound.className}`}>Services</p>
+              <p className={`inline text-[13px] md:text-[14px] lg:text-[19px] tracking-widest text-center leading-none text-white  ${varelaRound.className}`}>Real Estate Solution</p>
+              <p className={`inline text-[13px] md:text-[14px] lg:text-[19px] tracking-widest leading-none text-white  ${varelaRound.className}`}>Showtime</p>
+              <p className={`inline text-[13px] md:text-[14px] lg:text-[19px] tracking-widest leading-none text-white  ${varelaRound.className}`}>Decentragram</p>
               
              </div>
           </div>

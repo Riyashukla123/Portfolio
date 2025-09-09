@@ -37,7 +37,7 @@ export default function Main(){
       <div className={`${loading ? 'translate-y-0' : ' -translate-y-full'} transition-all duration-900 flex flex-col justify-between fixed h-screen w-screen items-center z-50 bg-purple-700`}>
            <LoadingScreen /> 
       </div>
-      <div className="relative w-full h-screen min-h-screen snap-start object-contain flex flex-col">
+      <div id="home" className="relative w-full h-screen min-h-screen snap-start object-contain flex flex-col">
         <Background />
         <Nav setMenu={setMenu} menu={menu}/>
         <Home/>

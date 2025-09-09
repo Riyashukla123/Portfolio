@@ -19,7 +19,7 @@ export default function Services({setProView, setInd}){
     return () => clearInterval(interval)
   },[activeCard])
   return(
-   <div className="flex flex-col w-full h-screen min-h-screen snap-start bg-purple-700">
+   <div id="services" className="flex flex-col w-full h-screen min-h-screen snap-start bg-purple-700">
     <div className="flex flex-row w-full h-[calc(100%-60px)]">
       <div className="h-full w-[60px] border-r border-purple-600"></div>
       <div className="h-full w-[calc(100%-120px)] flex flex-col relative">

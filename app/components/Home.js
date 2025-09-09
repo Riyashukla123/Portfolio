@@ -20,10 +20,10 @@ export default function Home(){
             <GoNorthStar className="bg-transparent text-5xl lg:text-7xl text-yellow-100"/>
           </div>
           <div className="w-full h-full px-8 md:px-16 flex items-center justify-center md:justify-start border-b border-slate-800">
-            <p className={`text-4xl sm:text-5xl md:text-7xl lg:text-8xl tracking-widest ${audiowide.className}`}> DEVELOPMENT</p>
+            <p className={`text-4xl sm:text-5xl md:text-7xl lg:text-8xl text-nowrap tracking-widest ${audiowide.className}`}> FRONT-END</p>
           </div>
           <div className="w-full h-full px-8 md:px-16 flex items-center justify-center md:justify-start border-b border-slate-800">
-            <p className={`text-4xl sm:text-5xl md:text-7xl lg:text-8xl tracking-widest ${audiowide.className} `}>EXPERTISE</p>
+            <p className={`text-4xl sm:text-5xl md:text-7xl lg:text-8xl text-nowrap tracking-widest ${audiowide.className} `}>BACK-END</p>
           </div>
           <div className="w-full h-full items-center px-8 md:px-16 border-b border-slate-800 flex flex-row justify-end">
             <div className=" w-full md:w-3/4 lg:w-1/2">
@@ -32,7 +32,7 @@ export default function Home(){
           </div>
           <div className="w-full" />
           <div className="w-full items-center h-full px-8 md:px-16 flex flex-row justify-center md:justify-end">
-            <p className={`text-4xl sm:text-5xl md:text-7xl lg:text-8xl  tracking-widest  ${audiowide.className}`}>CREATIVITY</p>
+            <p className={`text-4xl sm:text-5xl md:text-7xl lg:text-8xl text-nowrap  tracking-widest  ${audiowide.className}`}>DEVOPS</p>
           </div>
         </div>
         

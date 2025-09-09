@@ -12,7 +12,7 @@ const varelaRound = Varela_Round({ subsets: ['latin'], weight: '400' });
 
 export default function Skills(){
   return(
-    <div className="flex flex-col w-full h-screen min-h-screen snap-start bg-gradient-to-b from-purple-700 via-purple-200 to-white">
+    <div id="skills" className="flex flex-col w-full h-screen min-h-screen snap-start bg-gradient-to-b from-purple-700 via-purple-200 to-white">
       <div className="flex flex-row w-full h-[calc(100%-60px)] justify-between">
         <div className="h-full w-[60px] border-r [border-image:linear-gradient(to_bottom,#9810fa,#cad5e2,#cad5e2)_1_100%] "></div>
         <div className="h-full w-[calc(100%-120px)] flex-flex-col ">

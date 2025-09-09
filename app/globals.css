@@ -35,3 +35,6 @@ body {
 .loader-animation{
   animation: loader 3s ease-in-out infinite;
 }
+html {
+  scroll-behavior: smooth;
+}
