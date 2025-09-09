@@ -10,7 +10,7 @@ export default function Nav({setMenu, menu}){
   return(
     <div className="z-20 bg-transparent flex flex-row justify-between w-[100%] h-[60px]">
       <div className="h-full w-[60px] p-2">
-        <Image src={logo} alt="logo"/>
+        <Image width={50} height={50} src={logo} alt="logo"/>
       </div>
       <div className="flex justify-end w-[calc(100%-120px)]">
        <div className="hidden md:flex flex-row ">

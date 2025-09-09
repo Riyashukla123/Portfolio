@@ -23,7 +23,7 @@ export default function About(){
           <div className="flex justify-center w-full h-[300px] md:h-full lg:p-16 object-cover  border-b md:border-b-0 md:border-r [border-image:linear-gradient(to_bottom,#1d293d,#1d293d,#9810fa)_1_100%]">
              <div className="flex justify-center relative w-full">
               <div className='hidden md:block absolute bottom-0 left-0 w-full h-2/3 bg-linear-20 from-[#7E22CE]  to-70% lg:to-60% to-transparent'/>
-              <Image src={prof2} alt="profile" className=" w-full h-full object-cover object-[0% 30%] md:object-center"/>
+              <Image src={prof2} width={700} height={500} alt="profile" className=" w-full h-full object-cover object-[0% 30%] md:object-center"/>
              </div>
           </div>
           <div className="w-full flex flex-col justify-between">

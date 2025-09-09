@@ -30,16 +30,16 @@ export default function Projects({setProView, setInd}){
           <div className="w-1/2 h-full flex flex-col border-r border-slate-500 ">
             <div className="w-full flex flex-row  h-2/5">
               <div className="border-r border-slate-500 w-1/2 h-full object-cover">
-              <Image src={cor} alt="cor" className=" w-full h-full object-cover"/>
+              <Image width={700} height={500} priority={false} src={cor} alt="cor" className=" w-full h-full object-cover"/>
               </div>
               <div className="w-1/2 h-full object-cover">
-              <Image src={checks} alt="cor" className=" w-full h-full object-cover"/>
+              <Image width={700} height={500} priority={false} src={checks} alt="cor" className=" w-full h-full object-cover"/>
               </div>
             </div>
             
             <div className="w-full flex flex-row h-3/5">
               <div className=" w-full h-full overflow-hidden object-contain">
-                <video
+                {/* <video
                   autoPlay
                   loop
                   muted
@@ -47,7 +47,7 @@ export default function Projects({setProView, setInd}){
                   className="w-full h-full object-cover z-1000">
                   <source src="/V7.mp4" type="video/mp4" />
                   Your browser does not support the video tag.
-                </video>
+                </video> */}
                
               </div>
             </div>
@@ -57,7 +57,7 @@ export default function Projects({setProView, setInd}){
             <p className={`text-5xl tracking-widest leading-none  ${audiowide.className} w-[300px]`}>What I Did</p>
             </div>
             <div className="h-1/3 w-full object-cover">
-            <Image src={cush} alt="cor" className=" w-full h-full object-cover"/>
+            <Image width={700} height={500} priority={false} src={cush} alt="cor" className=" w-full h-full object-cover"/>
             </div>
           </div>
         </div>

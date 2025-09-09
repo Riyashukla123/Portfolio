@@ -18,7 +18,7 @@ export default function Contact(){
         <div className="h-full w-1/2 border-r [border-image:linear-gradient(to_bottom,#9810fa,#0f172b,#9810fa)_1_100%] flex flex-col justify-between">
           <div className="flex flex-row w-full justify-between items-center p-4 md:px-8 md:py-10 border-b [border-image:linear-gradient(to_right,#9810fa,#0f172b,#0f172b)_100%_1%]">
             <div className=" hidden lg:flex justify-center items-center object-contain ">
-              <Image src="/logo.png" alt="logo" width={120} height={120}/>
+              <Image priority={false} src="/logo.png" alt="logo" width={120} height={120}/>
             </div>
             <div className={`flex items-center justify-center md:justify-start  sm:text-4xl tracking-widest leading-none text-white  ${audiowide.className}`}><p className="inline">Riya Shukla</p></div>
           </div>
